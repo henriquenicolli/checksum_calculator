@@ -1,7 +1,6 @@
 import hashlib
 
 def calculate_checksum(file_path, algorithm="sha256"):
-    """Calculate the checksum of a file using the specified hash algorithm."""
     hash_func = hashlib.new(algorithm)
     
     with open(file_path, "rb") as f:
